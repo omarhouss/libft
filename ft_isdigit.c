@@ -6,16 +6,17 @@
 /*   By: ohoussai <ohoussai@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/04 17:26:29 by ohoussai          #+#    #+#             */
-/*   Updated: 2021/11/10 22:44:28 by ohoussai         ###   ########.fr       */
+/*   Updated: 2021/11/25 05:23:17 by ohoussai         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-int ft_isdigit(int c)
+
+int	ft_isdigit(int c)
 {
-    if (c >= '0' && c <= '9')
-    {
-        return (1);
-    }
-    return (0);
+	if (c >= '0' && c <= '9')
+	{
+		return (1);
+	}
+	return (0);
 }

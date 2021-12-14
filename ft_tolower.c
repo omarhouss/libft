@@ -6,18 +6,19 @@
 /*   By: ohoussai <ohoussai@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/08 16:58:09 by ohoussai          #+#    #+#             */
-/*   Updated: 2021/11/10 22:52:58 by ohoussai         ###   ########.fr       */
+/*   Updated: 2021/11/25 23:52:31 by ohoussai         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-int ft_tolower(int  c)
+
+int	ft_tolower(int c)
 {
-    if (c >= 'A' && c <= 'Z')
-    {
-        c+=32;
-    }
-    return c;
+	if (c >= 'A' && c <= 'Z')
+	{
+		c += 32;
+	}
+	return (c);
 }
 /*
 int main()

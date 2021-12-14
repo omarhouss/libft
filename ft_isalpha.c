@@ -6,11 +6,12 @@
 /*   By: ohoussai <ohoussai@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/02 17:17:34 by ohoussai          #+#    #+#             */
-/*   Updated: 2021/11/10 19:09:30 by ohoussai         ###   ########.fr       */
+/*   Updated: 2021/11/25 05:05:32 by ohoussai         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
 int	ft_isalpha(int c)
 {
 	if ((c >= 'a' && c <= 'z') || (c >= 'A' && c <= 'Z'))

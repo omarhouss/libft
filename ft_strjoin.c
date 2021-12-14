@@ -1,38 +1,31 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_calloc.c                                        :+:      :+:    :+:   */
+/*   ft_strjoin.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ohoussai <ohoussai@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/11/11 07:43:32 by ohoussai          #+#    #+#             */
-/*   Updated: 2021/11/25 05:01:44 by ohoussai         ###   ########.fr       */
+/*   Created: 2021/11/11 09:56:38 by ohoussai          #+#    #+#             */
+/*   Updated: 2021/11/25 22:12:52 by ohoussai         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	*ft_calloc(size_t count, size_t size)
+char	*ft_strjoin(char const *s1, char const *s2)
 {
-	size_t	i;
-	void	*ptr;
+	char	*re;
+	size_t	s1line;
+	size_t	tline;
 
-	i = 0;
-	ptr = (char *)malloc(count * size);
-	if (ptr == NULL)
+	if (!s1 || !s2)
 		return (NULL);
-	while (count * size > i)
-	{
-		((unsigned char *)ptr)[i] = 0;
-		i++;
-	}
-	return (ptr);
+	s1line = ft_strlen(s1) + 1;
+	tline = s1line + ft_strlen(s2);
+	re = (char *)malloc (sizeof(char) * tline);
+	if (!re)
+		return (NULL);
+	ft_strlcpy(re, s1, s1line);
+	ft_strlcat(re, s2, tline);
+	return (re);
 }
-/*
-int main()
-{
-    char *p = ft_calloc(2,3);
-    printf("%s",p);
-    free(p);
-}
-*/

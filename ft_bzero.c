@@ -6,15 +6,15 @@
 /*   By: ohoussai <ohoussai@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/04 18:56:06 by ohoussai          #+#    #+#             */
-/*   Updated: 2021/11/10 21:54:35 by ohoussai         ###   ########.fr       */
+/*   Updated: 2021/11/26 01:47:11 by ohoussai         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void    ft_bzero(void *s, size_t n)
+void	ft_bzero(void *s, size_t n)
 {
-    ft_memset(s,0,n);
+	ft_memset(s, 0, n);
 }
 /*
 int main( void )
